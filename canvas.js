@@ -15,6 +15,12 @@ function createCanvas(canvas_name) {
    return ctx;
 }
 
+function createHiddenCanvas(canvas_name) {
+   var ctx = createCanvas(canvas_name)
+   canvas.style = -w+"px";
+   return ctx;
+}
+
 function resize(){
    var c = document.getElementsByTagName('canvas');
    width = w = window.innerWidth;
